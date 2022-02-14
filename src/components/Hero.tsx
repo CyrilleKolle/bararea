@@ -7,7 +7,6 @@ import {
   Heading,
   Text,
   Container,
-  AspectRatio,
 } from "@chakra-ui/react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 import Slider from "react-slick";
@@ -44,7 +43,6 @@ export default function Hero() {
       top={0}
       bottom={0}
     >
-      {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
         type="text/css"
@@ -69,7 +67,7 @@ export default function Hero() {
       >
         <BiLeftArrowAlt size="40px" />
       </IconButton>
-      {/* Right Icon */}
+
       <IconButton
         aria-label="right-arrow"
         variant="ghost"
@@ -82,7 +80,7 @@ export default function Hero() {
       >
         <BiRightArrowAlt size="40px" />
       </IconButton>
-      {/* Slider */}
+
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {SliderContent.map((card, index) => (
           <Box

@@ -16,8 +16,7 @@ import { useState } from "react";
 
 const MobileNav = () => {
   const [isFilterOpen, setFilterOpen] = useState(false);
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
+
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}

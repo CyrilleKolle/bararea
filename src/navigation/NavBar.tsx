@@ -10,16 +10,13 @@ import {
   HStack,
   Link,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import HeaderMarquee from "../components/HeaderMarquee";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { NavButton } from "../components/NavButton";
 import { useRouter } from "next/router";
-import { NAV_ITEMS } from "./DesktopNavItems";
 
 interface NavBarProps {
   navBarPosition?: boolean;
@@ -28,8 +25,6 @@ interface NavBarProps {
 const WithSubnavigation = (props: NavBarProps) => {
   const { isOpen, onToggle } = useDisclosure();
   const [isMenuOpen, setMenuClosed] = useState(false);
-  const [isRoute, setRoute] = useState(false);
-  const router = useRouter();
 
   return (
     <Box

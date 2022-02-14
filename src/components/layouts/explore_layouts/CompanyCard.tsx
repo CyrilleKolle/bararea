@@ -8,7 +8,6 @@ import {
   Icon,
   chakra,
   Tooltip,
-  Stack,
 } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
